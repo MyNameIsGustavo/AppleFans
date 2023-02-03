@@ -23,16 +23,16 @@ class Menu extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                Navigator.popAndPushNamed(context, "PageThree");
+                Navigator.popAndPushNamed(context, "PageFour");
               },
-              child: Text("iPhone history",
+              child: Text("iPod history",
                   style: TextStyle(fontSize: 18, color: Colors.black)),
             ),
             TextButton(
               onPressed: () {
-                Navigator.popAndPushNamed(context, "PageFour");
+                Navigator.popAndPushNamed(context, "PageThree");
               },
-              child: Text("iPod history",
+              child: Text("iPhone history",
                   style: TextStyle(fontSize: 18, color: Colors.black)),
             ),
             TextButton(

@@ -5,7 +5,9 @@ class PageFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       drawer: Drawer(
         child: Menu(),
       ),
@@ -26,7 +28,7 @@ class _conteudoPageFourState extends State<conteudoPageFour> {
         children: [
           Padding(padding: EdgeInsets.only(top: 25)),
           Text(
-            "Welcome, AppleLover!",
+            "Musical revolution.",
             style: TextStyle(fontSize: 18, fontFamily: 'Inter'),
           ),
           Padding(
@@ -45,7 +47,7 @@ class _conteudoPageFourState extends State<conteudoPageFour> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Apple Park - Cupertino, Califórnia.🌍",
+                "Apple Event - October 2001.🎧",
                 style: TextStyle(fontSize: 15),
               ),
             ],
@@ -58,10 +60,10 @@ class _conteudoPageFourState extends State<conteudoPageFour> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 110,
+                height: 170,
                 width: 300,
                 child: Text(
-                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley.",
+                  "The iPod was released on October 23, 2001. The iPod was a product launched with the purpose of revolutionizing the music market. The sales slogan was '1,000 songs in your pocket'. The iPod changed the course of the music business.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontFamily: 'Inter'),
                 ),
@@ -74,9 +76,9 @@ class _conteudoPageFourState extends State<conteudoPageFour> {
             children: [
               TextButton(
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, "PageFive");
+                  Navigator.popAndPushNamed(context, "PageThree");
                 },
-                child: Text("Android!",
+                child: Text("Thousand songs",
                     style: TextStyle(color: Colors.white, fontSize: 18)),
                 style: TextButton.styleFrom(
                   fixedSize: Size(200, 50),

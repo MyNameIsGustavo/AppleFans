@@ -5,7 +5,9 @@ class PageFive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       drawer: Drawer(
         child: Menu(),
       ),
@@ -27,7 +29,7 @@ class _conteudoPageFiveState extends State<conteudoPageFive> {
         children: [
           Padding(padding: EdgeInsets.only(top: 25)),
           Text(
-            "Welcome, AppleLover!",
+            "IOS and Android?",
             style: TextStyle(fontSize: 18, fontFamily: 'Inter'),
           ),
           Padding(
@@ -46,7 +48,7 @@ class _conteudoPageFiveState extends State<conteudoPageFive> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Apple Park - Cupertino, Califórnia.🌍",
+                "IOS and Android - Smartphones.🌍",
                 style: TextStyle(fontSize: 15),
               ),
             ],
@@ -59,10 +61,10 @@ class _conteudoPageFiveState extends State<conteudoPageFive> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 110,
+                height: 170,
                 width: 300,
                 child: Text(
-                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley.",
+                  "This was my first APP in Flutter. I took the liberty of creating an APP dedicated to Apple fans that would work on the Android operating system because this functionality of flutter is amazing, developing APP's for IOS and Android. LOL🤣😂🤣.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontFamily: 'Inter'),
                 ),

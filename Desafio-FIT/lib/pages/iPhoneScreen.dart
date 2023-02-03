@@ -5,7 +5,9 @@ class PageThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       drawer: Drawer(
         child: Menu(),
       ),
@@ -26,7 +28,7 @@ class _conteudoPageThreeState extends State<conteudoPageThree> {
         children: [
           Padding(padding: EdgeInsets.only(top: 25)),
           Text(
-            "Welcome, AppleLover!",
+            "Stop, World. Changes!",
             style: TextStyle(fontSize: 18, fontFamily: 'Inter'),
           ),
           Padding(
@@ -45,7 +47,7 @@ class _conteudoPageThreeState extends State<conteudoPageThree> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Apple Park - Cupertino, Califórnia.🌍",
+                "The big event - January 9, 2007.☄️",
                 style: TextStyle(fontSize: 15),
               ),
             ],
@@ -58,10 +60,10 @@ class _conteudoPageThreeState extends State<conteudoPageThree> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 110,
+                height: 170,
                 width: 300,
                 child: Text(
-                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley.",
+                  "On January 9 of 2007, the world changed. Steve Jobs introduced the iPhone at Apple's annual conference. From this event, the entire application and smartphone development market changed.In 2020 Apple earned US 64 billion dolars, much of that money coming from iPhones.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontFamily: 'Inter'),
                 ),
@@ -74,9 +76,9 @@ class _conteudoPageThreeState extends State<conteudoPageThree> {
             children: [
               TextButton(
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, "PageFour");
+                  Navigator.popAndPushNamed(context, "PageFive");
                 },
-                child: Text("Thousand songs",
+                child: Text("Android!",
                     style: TextStyle(color: Colors.white, fontSize: 18)),
                 style: TextButton.styleFrom(
                   fixedSize: Size(200, 50),

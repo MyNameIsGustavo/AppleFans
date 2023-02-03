@@ -5,7 +5,9 @@ class PageTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       drawer: Drawer(
         child: Menu(),
       ),
@@ -26,7 +28,7 @@ class _conteudoPageTwoState extends State<conteudoPageTwo> {
         children: [
           Padding(padding: EdgeInsets.only(top: 25)),
           Text(
-            "Welcome, AppleLover!",
+            "A new history.",
             style: TextStyle(fontSize: 18, fontFamily: 'Inter'),
           ),
           Padding(
@@ -45,7 +47,7 @@ class _conteudoPageTwoState extends State<conteudoPageTwo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Apple Park - Cupertino, Califórnia.🌍",
+                "Startup - Cupertino, Califórnia.🍎",
                 style: TextStyle(fontSize: 15),
               ),
             ],
@@ -58,10 +60,10 @@ class _conteudoPageTwoState extends State<conteudoPageTwo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 110,
+                height: 170,
                 width: 300,
                 child: Text(
-                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley.",
+                  "Steve Jobs and Steve Wozniak created Apple when they were young and curious. Apple's first product was the 'Apple One' released in 1976. The computer consisted of a motherboard made up of 60 chips and was named Apple Computer 1.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontFamily: 'Inter'),
                 ),
@@ -74,7 +76,7 @@ class _conteudoPageTwoState extends State<conteudoPageTwo> {
             children: [
               TextButton(
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, "PageThree");
+                  Navigator.popAndPushNamed(context, "PageFour");
                 },
                 child: Text("A new vision",
                     style: TextStyle(color: Colors.white, fontSize: 18)),

@@ -5,7 +5,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+      ),
       drawer: Drawer(
         child: Menu(),
       ),
@@ -59,10 +61,10 @@ class _conteudoHomeScreenState extends State<conteudoHomeScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 110,
+                height: 170,
                 width: 300,
                 child: Text(
-                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley.",
+                  "This APP was developed to share the admiration for the most different and valuable company in the world. Apple was founded in 1976 by Steve Jobs and Steve Wozniak in Silicon Valley. Do you know some of apple products, example: iPhone, iPad, Apple Watch and Macbook.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 16, fontFamily: 'Inter'),
                 ),
